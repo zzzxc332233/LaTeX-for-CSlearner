@@ -1,0 +1,45 @@
+\documentclass[12pt, a4paper]{ctexart}
+\usepackage{amsmath, amsthm, amssymb, appendix, bm, fancyhdr, graphicx, geometry, mathrsfs, zhnumber}
+%加载超链接宏包
+\usepackage[bookmarks=true, colorlinks, citecolor=black, linkcolor=black]{hyperref}
+%加载framed包
+\usepackage{framed}
+
+\newcounter{problemname}
+\newenvironment{problem}
+    {\begin{shaded}\stepcounter{problemname}\par\noindent\textbf{FRAME-\arabic{problemname}. }}{\end{shaded}\par}
+\newenvironment{problem*}
+    {\begin{shaded}\par\noindent}{\end{shaded}\par}
+\newenvironment{solution}
+    {\par\noindent\textbf{解答. }}{\par}
+\newenvironment{note}
+    {\par\noindent\textbf{题目\arabic{problemname}的注记. }}{\par}
+\usepackage{color}
+\definecolor{shadecolor}{RGB}{222, 227, 230}
+%注:可以添加不同的颜色,配成不同的环境
+
+\title{\textbf{MATH.}}
+\author{Shiyuu}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{problem}
+    这里是渐变框1. 
+\end{problem}
+
+\begin{problem*}
+    这里是渐变框2. 
+\end{problem*}
+
+\begin{solution}
+    这里是解答. 
+\end{solution}
+
+\begin{note}
+    这里是注记. 
+\end{note}
+
+\end{document}
